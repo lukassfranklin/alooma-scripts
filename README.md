@@ -13,8 +13,11 @@ The scripts work by connecting to your Alooma instance.
 To do so, it requires the following environment variables:
 
 `ALOOMA_HOST` - defaults  to `app.alooma.com`
+
 `ALOOMA_PORT` - defaults to `443`
+
 `ALOOMA_USERNAME` - Username to authenticate
+
 `ALOOMA_PASSWORD` - Password to authenticate
 
 You can either `export` them or setup a file name `.aloomarc` in the root of this repository with this format:
