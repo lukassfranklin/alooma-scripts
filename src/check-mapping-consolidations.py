@@ -8,10 +8,6 @@ api = alooma.Alooma(
     username=os.environ['ALOOMA_USERNAME'],
     password=os.environ['ALOOMA_PASSWORD'])
 
-#mp = api.get_mapping('audit_log')
-
-#pprint.pprint(mp)
-
 # Check for consolidation queries for mappings
 events = api.get_event_types()
 mappings = [x['name'] for x in events]
