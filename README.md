@@ -71,7 +71,7 @@ create table {schema}.{table} (like {schema}.{table}_log);
 
 Usage:
 ```bash
-make check-mapping MAPPING=mapping_name SCHEMA=schema_name TABLE=table_name
+make fix-mapping MAPPING=mapping_name SCHEMA=schema_name TABLE=table_name
 ```
 
 ### Get Notifications
