@@ -68,7 +68,7 @@ drop table if exists {schema}.{table}_log cascade;
 alter table {schema}.{table} rename to {table}_log;
 create table {schema}.{table} (like {schema}.{table}_log);
 alter table {schema}.{table} owner to alooma;
-alter table {schema}.{table}_log ownder to alooma;```
+alter table {schema}.{table}_log owner to alooma;```
 
 Usage:
 ```bash
