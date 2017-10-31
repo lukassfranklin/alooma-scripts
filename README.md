@@ -67,7 +67,8 @@ NOTE: You *must* rename the table before running this script. You can do so by r
 drop table if exists {schema}.{table}_log cascade;
 alter table {schema}.{table} rename to {table}_log;
 create table {schema}.{table} (like {schema}.{table}_log);
-```
+alter table {schema}.{table} owner to alooma;
+alter table {schema}.{table}_log ownder to alooma;```
 
 Usage:
 ```bash
